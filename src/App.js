@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageWithBookmark from './ImageWithBookmark'; // Assuming you have created ImageWithBookmark component
+import ImageWithBookmark from './ImageWithBookmark'; 
 import image1 from './reg-ten.jpg';
 import image2 from './reg-ten.jpg';
 import image3 from './reg-ten.jpg';
