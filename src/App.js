@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ImageWithBookmark from './ImageWithBookmark'; // Assuming you have created ImageWithBookmark component
+import image1 from './reg-ten.jpg';
+import image2 from './reg-ten.jpg';
+import image3 from './reg-ten.jpg';
+import image4 from './reg-ten.jpg';
+import image5 from './reg-ten.jpg';
 
-function App() {
+const images = [image1, image2, image3, image4, image5];
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My Image Gallery</h1>
+      {images.map((image, index) => (
+        <ImageWithBookmark key={index} src={image} />
+      ))}
     </div>
   );
-}
+};
 
 export default App;
