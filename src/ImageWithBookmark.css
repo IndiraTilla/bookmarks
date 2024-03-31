@@ -1,10 +1,10 @@
 .image-container {
     position: relative;
-    display: inline-block; /* Ensure the container fits the image size */
+    display: inline-block; 
   }
   
   .image {
-    width: 100%; /* Ensure the image fills its container */
+    width: 100%; 
   }
   
   .bookmark-button {
@@ -17,7 +17,7 @@
     
   }
   .bookmark-button img {
-    width: 3px; /* Set the desired width */
-    height: 6px; /* Set the desired height */
+    width: 3px; 
+    height: 6px; 
   }
   
