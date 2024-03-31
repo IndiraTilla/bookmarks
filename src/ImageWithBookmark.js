@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import bookmarkIcon from './bookmark.png'; // Import the bookmark icon
+import bookmarkIcon from './bookmark.png'; 
 
 const ImageWithBookmark = ({ src }) => {
   const [bookmarked, setBookmarked] = useState(false);
@@ -13,10 +13,10 @@ const ImageWithBookmark = ({ src }) => {
       <img src={src} alt="Image" className="image" />
       <button onClick={toggleBookmark} className="bookmark-button">
         {bookmarked ? (
-          <img src={bookmarkIcon} alt="Bookmark" width="70px"/> // Use as image source
+          <img src={bookmarkIcon} alt="Bookmark" width="70px"/> 
         ) : (
           <img src={bookmarkIcon} alt="Bookmark"  width="100px"/>
-          // Or embed as SVG component: <BookmarkIcon />
+         <BookmarkIcon />
         )}
       </button>
     </div>
